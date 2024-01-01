@@ -10,7 +10,9 @@ import { useRef, useState, useEffect } from "preact/hooks";
 import * as ResponsiveUtils from "ojs/ojresponsiveutils";
 import "ojs/ojtoolbar";
 import "ojs/ojmenu";
-import "ojs/ojbutton";
+import "ojs/ojbutton"
+import "ojs/ojselectsingle";
+import "ojs/ojtable";
 
 type Props = Readonly<{
   appName: string,
@@ -19,7 +21,7 @@ type Props = Readonly<{
 
 export function Header({ appName, userLogin }: Props) {
   const mediaQueryRef = useRef<MediaQueryList>(window.matchMedia(ResponsiveUtils.getFrameworkQuery("sm-only")!));
-  
+
   const [isSmallWidth, setIsSmallWidth] = useState(mediaQueryRef.current.matches);
 
   useEffect(() => {
@@ -55,20 +57,20 @@ export function Header({ appName, userLogin }: Props) {
           </h1>
         </div>
         <div class="oj-flex-bar-end">
-        <oj-toolbar>
-          <oj-menu-button id="userMenu" display={getDisplayType()} chroming="borderless">
-            <span>{userLogin}</span>
-            <span slot="endIcon" class={getEndIconClass()}></span>
-            <oj-menu id="menu1" slot="menu">
-              <oj-option id="pref" value="pref">Preferences</oj-option>
-              <oj-option id="help" value="help">Help</oj-option>
-              <oj-option id="about" value="about">About</oj-option>
-              <oj-option id="out" value="out">Sign Out</oj-option>
-            </oj-menu>
-          </oj-menu-button>
-        </oj-toolbar>
+          <oj-toolbar>
+            <oj-menu-button id="userMenu" display={getDisplayType()} chroming="borderless">
+              <span>{userLogin}</span>
+              <span slot="endIcon" class={getEndIconClass()}></span>
+              <oj-menu id="menu1" slot="menu">
+                <oj-option id="pref" value="pref">Preferences</oj-option>
+                <oj-option id="help" value="help">Help</oj-option>
+                <oj-option id="about" value="about">About</oj-option>
+                <oj-option id="out" value="out">Sign Out</oj-option>
+              </oj-menu>
+            </oj-menu-button>
+          </oj-toolbar>
         </div>
       </div>
     </header>
-  );  
+  );
 }
