@@ -24,13 +24,15 @@ export const App = registerCustomElement(
     useEffect(() => {
       Context.getPageContext().getBusyContext().applicationBootstrapComplete();
     }, []);
-    
+
     return (
       <div id="appContainer" class="oj-web-applayout-page">
         <Header
-          appName={appName} 
-          userLogin={userLogin} 
+          appName={appName}
+          userLogin={userLogin}
         />
+
+        
         <Content />
         <Footer />
       </div>
