@@ -8,6 +8,8 @@
 import { h } from "preact";
 
 export function Content() {
+
+
   return (
     <div class="oj-web-applayout-max-width oj-web-applayout-content">
       <div>
@@ -16,9 +18,22 @@ export function Content() {
       <div>
         <oj-form-layout columns={1} class="oj-formlayout-full-width">
           <oj-input-text labelHint="Lookup Name"></oj-input-text>
-          <oj-text-area labelHint="Description" class="oj-sm-padding-4x-top"></oj-text-area>
+          <oj-text-area labelHint="Description" class="oj-sm-padding-2x-top" rows={5}></oj-text-area>
         </oj-form-layout>
+        <oj-toolbar class="oj-sm-justify-content-flex-end">
+          <oj-button>Update</oj-button>
+        </oj-toolbar>
 
+      </div>
+
+      <div>
+        <oj-accordion>
+          <oj-collapsible slot="default">
+
+            <h1 slot="header">Lookup Layout</h1>
+
+          </oj-collapsible>
+        </oj-accordion>
       </div>
     </div>
   );

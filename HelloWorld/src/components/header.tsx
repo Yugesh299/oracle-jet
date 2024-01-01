@@ -14,6 +14,7 @@ import "ojs/ojbutton"
 import "ojs/ojselectsingle";
 import "ojs/ojtable";
 import "ojs/ojformlayout";
+import "ojs/ojaccordion";
 
 type Props = Readonly<{
   appName: string,
