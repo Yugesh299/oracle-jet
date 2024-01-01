@@ -31,11 +31,11 @@ export const App = registerCustomElement(
           appName={appName}
           userLogin={userLogin}
         />
-
-        
         <Content />
         <Footer />
+
       </div>
+
     );
   }
 );
