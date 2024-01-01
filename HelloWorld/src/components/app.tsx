@@ -20,7 +20,7 @@ type Props = Readonly<{
 
 export const App = registerCustomElement(
   "app-root",
-  ({ appName = "App Name", userLogin = "john.hancock@oracle.com" }: Props) => {
+  ({ appName = "OJet Lookup", userLogin = "yugeshkeluskar.yk@gmail.com" }: Props) => {
     useEffect(() => {
       Context.getPageContext().getBusyContext().applicationBootstrapComplete();
     }, []);

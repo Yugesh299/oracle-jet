@@ -13,6 +13,13 @@ export function Content() {
       <div>
         <h4>Dynamic Lookup using Oracle JET</h4>
       </div>
+      <div>
+        <oj-form-layout columns={1} class="oj-formlayout-full-width">
+          <oj-input-text labelHint="Lookup Name"></oj-input-text>
+          <oj-text-area labelHint="Description" class="oj-sm-padding-4x-top"></oj-text-area>
+        </oj-form-layout>
+
+      </div>
     </div>
   );
 };
