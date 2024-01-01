@@ -13,7 +13,7 @@ export function Content() {
   return (
     <div class="oj-web-applayout-max-width oj-web-applayout-content">
       <div>
-        <h4>Dynamic Lookup using Oracle JET</h4>
+        <h4>Dynamic Lookup in Oracle JET</h4>
       </div>
       <div>
         <oj-form-layout columns={1} class="oj-formlayout-full-width">
