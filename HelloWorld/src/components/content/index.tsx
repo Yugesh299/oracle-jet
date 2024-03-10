@@ -16,7 +16,7 @@ export function Content() {
         <h4>Dynamic Lookup in Oracle JET</h4>
       </div>
       <div>
-        
+
         <oj-form-layout columns={1} class="oj-formlayout-full-width">
           <oj-input-text labelHint="Lookup Name"></oj-input-text>
           <oj-text-area labelHint="Description" class="oj-sm-padding-2x-top" rows={5}></oj-text-area>
