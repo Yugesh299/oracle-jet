@@ -34,6 +34,8 @@ export function Content() {
 
             <h1 slot="header">Lookup Layout</h1>
 
+            <oj-table></oj-table>
+
           </oj-collapsible>
         </oj-accordion>
       </div>
